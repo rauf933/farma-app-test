@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+// переменные
+// var(--color-blue); - пример для использования
+
+:root {
+    --color-white: #fff;
+    --color-violet: #4c328c;
+    --color-pink: #dc4c94;
+    --color-blue: #10069F;
+    --main-font: 'Montserrat', sans-serif; // шрифт по умолчанию
+    --main-color: #2c2c2c; // цвет по умолчанию
+    --main-font-size: 16px; // размер шрифта по умолчанию
+    --color-grey: #a6a6a6;
+    --color-orange: #FF7500;
+}
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.plus_button {
+    display: none;
+    background: var(--color-orange);
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 13px;
+    padding: 12px 20px;
+    border-radius: 24px;
+    //max-width: 137px;
+    margin: 0 auto 0;
+}
+
+html {
+    background-color: var(--color-white);
+}
+.wrapper {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    overflow-x: hidden;
+    // overflow-y: scroll;
+    // -webkit-overflow-scrolling: touch;
+    background: var(--color-white);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+body {
+    font-family: var(--main-font), sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: var(--main-font-size);
+    color: var(--main-color);
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+.mob-scroll {
+    overflow-x: scroll;
+}
+
+.section {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    padding: 0 16px;
+
+    &__content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+._1 {
+
+}
+
+
+@media (max-width: 768px) {
+    
+}
