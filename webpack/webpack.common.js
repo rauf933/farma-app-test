@@ -25,21 +25,6 @@ module.exports = {
       filename: 'index.html',
       chunks: ['app']
     }),
-    new HtmlWebpackPlugin({
-      template: Path.resolve(__dirname, '../src/page_one.html'),
-      filename: 'page_one.html',
-      chunks: ['app']
-    }),
-    new HtmlWebpackPlugin({
-      template: Path.resolve(__dirname, '../src/page_two.html'),
-      filename: 'page_two.html',
-      chunks: ['app']
-    }),
-    new HtmlWebpackPlugin({
-      template: Path.resolve(__dirname, '../src/page_three.html'),
-      filename: 'page_three.html',
-      chunks: ['app']
-    })
   ],
   resolve: {
     alias: {
