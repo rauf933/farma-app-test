@@ -25,6 +25,12 @@ module.exports = {
       filename: 'index.html',
       chunks: ['app']
     }),
+    
+    new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/email.html'),
+      filename: 'email.html',
+      chunks: ['app']
+    }),
   ],
   resolve: {
     alias: {
